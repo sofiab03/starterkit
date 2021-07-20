@@ -14,12 +14,20 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MainComponent } from './main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { StatusComponent } from './status/status.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { SearchPipe } from './pipe/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     MainComponent,
+    StatusComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +41,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatListModule,
     FlexModule,
     FontAwesomeModule,
+    HttpClientModule,
+    MatTableModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
